@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muse Epoxy Flooring provides premium epoxy floor coating solutions for residential, commercial, and industrial spaces.">
+  <title>Muse Epoxy Flooring | Premium Surface Coatings</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Keeps section headings and the quote form visible below a fixed/sticky navbar. */
+    #hero,
+    #services,
+    #gallery,
+    #contact,
+    #free-quote {
+      scroll-margin-top: 110px;
+    }
+
+    /* Two featured flooring services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      align-items: stretch;
+    }
+    .service-card {
+      overflow: hidden;
+      padding: 0;
+      height: 100%;
+    }
+    .service-image {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #ececec;
+    }
+    .service-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+    .service-card:hover .service-image img {
+      transform: scale(1.04);
+    }
+    .service-card-content {
+      padding: 26px;
+    }
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-link" aria-label="Muse Epoxy home">
+        <img src="./Logo.png" alt="Muse Epoxy Logo" class="brand-logo">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <!-- <a href="#calculator" class="nav-link">Cost Calculator</a> -->
+        <a href="#free-quote" class="nav-link btn-nav">Get Free Quote</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="navMenu"
+        aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="./hero.png" alt="Muse Epoxy metallic floor finishing" class="hero-img">
+          <!-- Optional image overlay card
+          <div class="image-overlay-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <h4>Lifetime Warranty</h4>
+              <p>Scratch, UV & Chemical Resistant</p>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1>Elevate Your Space with <span>Luxury Epoxy</span> Solutions</h1>
+        <p>Transform dull, worn-out concrete into high-gloss, ultra-durable, seamless art. Designed for residential
+          garages, commercial spaces, and industrial environments.</p>
+
+        <div class="hero-actions">
+          <a href="#free-quote" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Get Free Quote
+          </a>
+          <!-- <a href="#calculator" class="btn btn-outline"><i class="fa-solid fa-calculator"></i> Estimate Cost</a> -->
+        </div>
+
+        <!-- Optional hero statistics
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3>1,200+</h3>
+            <p>Floors Completed</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Satisfaction Guarantee</p>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">What We Offer</span>
+        <h2>High-Performance Epoxy Coatings</h2>
+        <p>Custom tailored to deliver unmatched durability and aesthetic brilliance.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-image">
+            <img
+              src="./metallic.jpg"
+              alt="Decorative metallic epoxy flooring with a polished marble-like finish"
+              loading="lazy">
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon"><i class="fa-solid fa-gem"></i></div>
+            <h3>Metallic Epoxy Flooring</h3>
+            <p>Distinctive, high-gloss metallic floors with flowing colours and a luxurious marble-like effect. Every installation creates a unique, seamless finish for garages, homes, showrooms, and commercial spaces.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-image">
+            <img
+              src="./flake.jpg"
+              alt="Durable decorative flake epoxy floor coating"
+              loading="lazy">
+          </div>
+          <div class="service-card-content">
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Flake Epoxy Flooring</h3>
+            <p>A durable, decorative coating system with coloured flakes and a protective clear finish. Ideal for garages, workshops, and other spaces that need an attractive, easy-to-maintain floor.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get a Free Quote Section -->
+  <section id="free-quote" class="quote-section">
+    <div class="container">
+      <div class="quote-form-container">
+        <form action="https://formspree.io/f/meaaygrv" method="POST">
+          <h3>Get a Free Quote</h3>
+          <!-- Honeypot anti-spam field: real visitors should leave this empty. -->
+          <div class="form-group" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+            <label for="website">Leave this field empty</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel" required>
+          </div>
+          <div class="form-group">
+            <textarea name="project" rows="4"
+              placeholder="Tell us about your project (Approx. square feet, location, preferred style)..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Submit Quote Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-info">
+        <span class="sub-title">Contact Us</span>
+        <h2>Ready to Transform Your Floor?</h2>
+        <p>Contact Muse Epoxy today for a free on-site measurement and sample consultation.</p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h5>Call Us</h5>
+              <p>6138783432</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h5>Email Us</h5>
+              <p>musepaintott@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h5>Service Area</h5>
+              <p>Ottawa &amp; Surrounds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="Logo.png" alt="Muse Epoxy Logo" class="footer-logo">
+        <p>Premium epoxy floor coating installations designed for lifetime elegance and durability.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Muse Epoxy Flooring. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./actions.js"></script>
+</body>
+
+</html>
