@@ -290,6 +290,13 @@
               statusDiv.classList.add("success");
               statusDiv.textContent = "Thank you! Your quote request has been sent successfully.";
               quoteForm.reset();
+
+              // Hide success message after 10 seconds (10000 milliseconds)
+              setTimeout(function () {
+                statusDiv.className = "form-status-message";
+                statusDiv.textContent = "";
+              }, 10000);
+
             } else {
               const data = await response.json();
               statusDiv.classList.add("error");
