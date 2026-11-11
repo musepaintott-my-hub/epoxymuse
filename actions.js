@@ -56,4 +56,5 @@ document.addEventListener('DOMContentLoaded', () => {
       quoteForm.reset();
     });
   }
+  document.getElementById("nl-badge-frame")?.remove();
 });
