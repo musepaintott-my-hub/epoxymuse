@@ -637,3 +637,6 @@ select:focus, input:focus, textarea:focus {
     padding: 25px;
   }
 }
+#nl-badge-frame {
+  display: none !important;
+}
